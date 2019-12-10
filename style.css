@@ -44,6 +44,10 @@
 	  background-color: #4BB462;
   }
   
+  a:link {
+	  color: #008736;
+  }
+  
   article {
 	  margin-top: 30px;
 	  margin-bottom: 20px;
