@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Nasza stacja paliw</title>
+  <link rel="stylesheet" href="styl4.css">
+ </head>
+ <body>
+  <header>
+   <h2>Witamy na stacji paliw!</h2>
+  </header>
+  <section id="l">
+	<a href="index.html"><img src="home.png"></a><br>
+	<a href="kalkulacja.html"><img src="znak.png"></a>
+  </section>
+  <section id="p">
+	<img src="samochod.png" alt="grafika: samochód">
+  </section>
+  <section id="g">
+	<h2>Oblicz, ile litrów musisz zatankować</h2>
+	Dystans do przejechania w kilometrach<br>
+	<input type="number" id="a"><br>
+	Spalanie samochodu w l/100km<br>
+	<input type="number" id="b"><br>
+	<input type="button" value="OBLICZ" onclick="oblicz()">
+	<p id="wynik"></p>
+  </section>
+  <script>
+function oblicz(){
+ var a = document.getElementById("a").value;
+ var b = document.getElementById("b").value;
+ var wynik = a * b / 100;
+ document.getElementById("wynik").innerHTML = "Potrzebujesz: "+wynik+" litrów paliwa"
+}
+  </script>
+  <section id="dl">
+	<p>Stronę wykonał: 00000000000000</p>
+  </section>
+  <section id="dp">
+	<a id="plik" href="kwerendy.txt">Tu pobierzesz zapytania</a>
+  </section>
+ </body>
+</html>
