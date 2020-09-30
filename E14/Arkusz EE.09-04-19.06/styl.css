@@ -46,7 +46,7 @@ body{
 #pole1, #pole2{
 	color: orange;
 }
-#e{
+.e{
 	background: #D3D3D3;
 	color: #2F2F2F;
 	border: solid;
