@@ -21,13 +21,14 @@
   </section>
   <section id="l">
 	<h3>Proste działania</h3>
-	<p>liczba A: <input id="pole" type="text"></p>
-	<p>liczba B: <input id="pole" type="text"></p>
-	<input id="e" type="button" value="+">
-	<input id="e" type="button" value="-">
-	<input id="e" type="button" value="*">
-	<input id="e" type="button" value="/">
-	<input id="e" type="button" value="A^B">
+	<p>liczba A: <input id="pole1" type="text"></p>
+	<p>liczba B: <input id="pole2" type="text"></p>
+	<input id="e" type="button" value="+" onclick="dodawanie()">
+	<input id="e" type="button" value="-" onclick="odejmowanie()">
+	<input id="e" type="button" value="*" onclick="mnozenie()">
+	<input id="e" type="button" value="/" onclick="dzielenie()">
+	<input id="e" type="button" value="A^B" onclick="potegowanie()">
+	<p id="wynik"></p>
   </section>
   <section id="p">
 	<ul>
