@@ -14,10 +14,11 @@ function dzielenie(){
   let a = document.getElementById("pole1").value;
   let b = document.getElementById("pole2").value;
   let wynik = a / b;
-  if(b == 0){
+  /*if(b == 0){
     document.getElementById("wynik").innerHTML = "Niepoprawne dane";}
   else{
-  document.getElementById("wynik").innerHTML = "Wynik dzielenia wynosi: " + wynik;}
+  document.getElementById("wynik").innerHTML = "Wynik dzielenia wynosi: " + wynik;}*/
+  b == 0 ? document.getElementById("wynik").innerHTML = "Niepoprawne dane" : document.getElementById("wynik").innerHTML = "Wynik dzielenia wynosi: " + wynik;
 }
 function mnozenie(){
   let a = document.getElementById("pole1").value;
