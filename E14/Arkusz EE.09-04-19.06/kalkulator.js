@@ -1,7 +1,7 @@
 function dodawanie(){
   let a = document.getElementById("pole1").value;
   let b = document.getElementById("pole2").value;
-  let wynik = a + b;
+  let wynik = parseInt(a) + parseInt(b);
   document.getElementById("wynik").innerHTML = "Wynik dodawania wynosi: " + wynik;
 }
 function odejmowanie(){
