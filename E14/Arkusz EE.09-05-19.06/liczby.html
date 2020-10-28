@@ -27,13 +27,27 @@
   </section>
   <section id="p">
 	<h2>Generowanie ciągu arytmetycznego</h2>
-	<p>Pierwszy wyraz A1: <input class="pole" type="number"></p>
-	<p>Różnica ciągu R: <input class="pole" type="number"></p>
-	<p>Liczba wyrazów w ciągu N: <input class="pole" type="number"></p>
-	<input type="button" value="Generuj ciąg">
+	<p>Pierwszy wyraz A1: <input class="pole" id="pierwsza" type="number"></p>
+	<p>Różnica ciągu R: <input class="pole" id="roznica" type="number"></p>
+	<p>Liczba wyrazów w ciągu N: <input class="liczbaWyrazow" type="number"></p>
+	<input type="button" value="Generuj ciąg" onclick="generuj()">
+	  <p id="napis"></p>
   </section>
   <section id="f">
 	<p>Autor: 00000000000000</p>
   </section>
+  	<script>
+		function generuj(){
+			var liczba = +document.getElementById("pierwsza").value;
+			var roznica = +document.getElementById("roznica").value;
+			var liczbaWyrazow = +document.getElementById("liczbaWyrazow").value;
+			const wyrazy = [];
+			for(var i = 0; i < liczbaWyrazow ; i++){
+				wyrazy.push(liczba+", ");
+				liczba += roznica;
+			}
+			document.getElementById("napis").innerHtml = "Ciąg arytmetyczny zawiera wyrazy: " + wyrazy;
+		}
+	</script>
  </body>
 </html>
