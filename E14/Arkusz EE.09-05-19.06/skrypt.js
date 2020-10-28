@@ -1,7 +1,7 @@
 function generuj(){
-			var liczba = +document.getElementById("pierwsza").value;
-			var roznica = +document.getElementById("roznica").value;
-			var liczbaWyrazow = +document.getElementById("liczbaWyrazow").value;
+			var liczba = parseInt(document.getElementById("pierwsza").value);
+			var roznica = parseInt(document.getElementById("roznica").value);
+			var liczbaWyrazow = parseInt(document.getElementById("liczbaWyrazow").value);
 			var wynik = "Ciąg arytmetyczny zawiera wyrazy: ";
 			for(var i = 0; i < liczbaWyrazow ; i++){
 				wynik += liczba+", ";
