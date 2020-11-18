@@ -16,6 +16,6 @@ function strzyzenie(){
 	if(d.checked == true){
 		e = 50;
 	}
-	document.getElementById("cena").innerHtml = "Cena strzyżenia:" + e;
+	document.getElementById("cena").innerHTML = "Cena strzyżenia:" + e;
 
 }
