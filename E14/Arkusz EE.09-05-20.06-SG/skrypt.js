@@ -1,8 +1,8 @@
 function strzyzenie(){
-	var a = document.getElementById("krotkie").value;
-	var b = document.getElementById("srednie").value;
-	var c = document.getElementById("poldlugie").value;
-	var d = document.getElementById("dlugie").value;
+	var a = document.getElementById("krotkie");
+	var b = document.getElementById("srednie");
+	var c = document.getElementById("poldlugie");
+	var d = document.getElementById("dlugie");
 	var e = 0;
 	if(a.checked == true){
 		e = 25;
