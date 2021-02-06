@@ -1,0 +1,53 @@
+body{
+	font-family: Arial;
+}
+header {
+	background: rgb(220,220,220);
+	padding: 20px;
+	text-align: center;
+}
+#l {
+	background: rgb(255,127,80);
+	width: 50%;
+	float: left;
+	height: 410px;
+	color: white;
+}
+#p {
+	background: rgb(255,127,80);
+	width: 50%;
+	float: left;
+	height: 410px;
+	color: white;
+}
+#g {
+	background: rgb(220,220,220);
+	padding: 20px;
+	text-align: center;
+}
+table, tr, th, td {
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(255,127,80);
+    margin-left:auto; 
+    margin-right:auto; 
+	padding: 10px;
+	text-align: center;
+}
+#dl {
+	background: rgb(255,127,80);
+	color: white;
+	width: 50%;
+	float: left;
+	height: 100px;
+}
+#dp {
+	background: rgb(255,127,80);
+	color: white;
+	width: 50%;
+	float: left;
+	height: 100px;
+}
+#plik {
+	color: white;
+}
