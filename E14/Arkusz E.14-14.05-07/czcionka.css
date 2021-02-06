@@ -1,0 +1,26 @@
+body{
+	font-family: Arial;
+	font-size: 18px;
+}
+.baner{
+	width: 100%;
+	border: solid Black;
+}
+img{
+	width: 100%;
+}
+.menu{
+	float: left;
+	width: 39%;
+	border: solid Black;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	height: 175px;
+}
+.zawartosc{
+	float: left;
+	width: 60%;
+	border: solid Black;
+	border-top-width: 0px;
+	height: 175px;
+}

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fabryka żelków</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styl9.css">
+		<script src="skrypt.js"></script>
+	</head>
+	<body>
+		<div class="gl">
+			<a href="index.html"><img src="logo.png" alt="logo fabryki">
+		</div>
+		<div class="gp">
+			<a href="zamownienie.html" class="link">Zamówienie</a>
+		</div>
+		<div class="baner">
+			<h2>Zamów nasz produkt</h2>
+		</div>
+		<div class="dl">
+			<h1>Oferta</h1>
+			<table>
+				<tr>
+				<td>Kształy</td><td>Kolory</td>
+				</tr>
+				<td>
+					<ol>
+						<li>miś</li>
+						<li>żabka</li>
+						<li>serce</li>
+					</ol>
+				</td>
+				<td>
+					<ol>
+						<li>czerwony</li>
+						<li>niebieski</li>
+						<li>żółty</li>
+						<li>inny</li>
+					</ol>
+				</td>
+			</table>
+		</div>
+		<div class="dp">
+			<p>Podaj numer kształtu</p>
+			<input id="ksztalt" type="number"></input>
+			<p>skomponuj swój kolor, podaj RGB</p>
+			<p>
+			R: <input id="r" type="number">
+			G: <input id="g" type="number">
+			B: <input id="b" type="number">
+			</p>
+			<input type="button" value="Zamów" onclick="zamow()">
+			<p id="wynik">Wybrany kształt</p>
+			<button id="kolor">Wybrany kolor</button>
+		</div>
+		<div class="ft">
+			<p>Autor strony: 00000000</p>
+		</div>
+	</body>
+</html>
