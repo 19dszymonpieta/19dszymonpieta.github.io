@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Source Sans Pro, arial;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2e2e2e;
+}
+
+.main {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #231F20;
+  color: white;
+}
+
+.grafika {
+  width: 100%;
+  display: block;
+}
+
+nav {
+  background-color: #008736;
+}
+
+nav ul {
+  font-size: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 33.33%;
+  padding: 15px 50px;
+}
+
+a.menu {
+  display: block;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s;
+}
+
+
+a.menu:hover {
+  font-size: 35px;
+  border-bottom: 2px solid white;
+
+}
+
+a.active {
+  font-size: 35px;
+  border-bottom: 2px solid white;
+}
+
+a.mail {
+  color: #008736;
+}
+
+a.project {
+  color: white;
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+section h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0 10% 20px 10%;
+  padding-bottom: 8px;
+  border-bottom: 5px solid #008736;
+}
+
+section p {
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+
+footer {
+  height: 40px;
+  background-color: #008736;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width:660px) {
+  nav ul li {
+    width: 100%;
+    font-size: 35px;
+  }
+}
