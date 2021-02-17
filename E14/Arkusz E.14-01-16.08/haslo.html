@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Miernik jakości hasła</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+  <div class="baner">
+    <a href="index.html">
+      <h1>Sprawdź swoje hasło</h1>
+    </a>
+  </div>
+  <div class="lewy">
+    <h2>Wybierz</h2>
+    <ol>
+      <li><a href="haslo.html">Sprawdź hasło</a></li>
+      <li><a href="zasady.html">Zasasdy tworzenia hasła</a></li>
+    </ol>
+  </div>
+  <div class="prawy">
+    <p>Twoje hasło:
+      <input id="password" type="password">
+      <button onclick="sprawdzanieHasla()">Sprawdź</button>
+    </p>
+    <p id="napis"></p>
+  </div>
+  <footer>
+    <h3>Miernik jakości hasła</h3>
+    <p>Stronę opracował: 000000000</p>
+  </footer>
+  <script>
+    function sprawdzanieHasla() {
+      var haslo = password.value;
+      if (haslo == "") {
+        napis.style.color = "red";
+        napis.innerHTML = "WPISZ HASŁO";
+      } else if (haslo.length >= 4 && haslo.length <= 6 && haslo.search("[0-9]") >= 0) {
+        napis.style.color = "blue";
+        napis.innerHTML = "ŚREDNIE";
+      } else if (haslo.length > 6 && haslo.search("[0-9]") >= 0) {
+        napis.style.color = "green";
+        napis.innerHTML = "DOBRE";
+      } else {
+        napis.style.color = "yellow";
+        napis.innerHTML = "SŁABE";
+      }
+    }
+
+  </script>
+</body>
+
+</html>

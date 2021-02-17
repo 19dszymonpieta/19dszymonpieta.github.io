@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+
+.baner {
+  background-color: #829EB9;
+  height: 50px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.lewy {
+  float: left;
+  width: 25%;
+  height: 600px;
+  background-color: #B3C6D9;
+}
+
+.prawy {
+  float: left;
+  background-color: #E0E9F1;
+  height: 600px;
+  width: 75%;
+  text-align: center;
+}
+
+footer {
+  clear: both;
+  background-color: #829EB9;
+  font-family: Arial;
+  text-align: right;
+}
+
+img {
+  margin: 30px;
+  padding: 10px;
+  border: 2px dashed #B3C6D9;
+}
+
+table {
+  margin: 30px;
+  border: 2px solid;
+  width: 70%;
+}
+
+tr:hover {
+  background-color: blue;
+  color: white;
+}
+
+th {
+  background: #B3C6D9;
+}
+
+td,
+th {
+  border: 2px solid;
+}
+
+p {
+  margin: 30px;
+}
