@@ -85,6 +85,91 @@ section p {
   padding: 20px 0;
 }
 
+.project {
+  position: relative;
+}
+
+.project:hover:after {
+  line-height: 0;
+  position: absolute;
+  right: -420px;
+  bottom: -40px;
+  display: block;
+  z-index: 2;
+  border: 4px solid #00B636;
+}
+
+.a1:hover:after {
+  content: url('img/Arkusz01.jpg');
+}
+
+.a2:hover:after {
+  content: url('img/Arkusz02.jpg');
+}
+
+.a3:hover:after {
+  content: url('img/Arkusz03.jpg');
+}
+
+.a4:hover:after {
+  content: url('img/Arkusz04.jpg');
+}
+
+.a5:hover:after {
+  content: url('img/Arkusz05.jpg');
+}
+
+.a6:hover:after {
+  content: url('img/Arkusz06.jpg');
+}
+
+.a7:hover:after {
+  content: url('img/Arkusz07.jpg');
+}
+
+.a8:hover:after {
+  content: url('img/Arkusz08.jpg');
+}
+
+.a9:hover:after {
+  content: url('img/Arkusz09.jpg');
+}
+
+.a10:hover:after {
+  content: url('img/Arkusz10.jpg');
+}
+
+.a11:hover:after {
+  content: url('img/Arkusz11.jpg');
+}
+
+.a12:hover:after {
+  content: url('img/Arkusz12.jpg');
+}
+
+.a13:hover:after {
+  content: url('img/Arkusz13.jpg');
+}
+
+.a14:hover:after {
+  content: url('img/Arkusz14.jpg');
+}
+
+.a15:hover:after {
+  content: url('img/Arkusz15.jpg');
+}
+
+.a16:hover:after {
+  content: url('img/Arkusz16.jpg');
+}
+
+.a17:hover:after {
+  content: url('img/Arkusz17.jpg');
+}
+
+.a18:hover:after {
+  content: url('img/Arkusz18.jpg');
+}
 
 footer {
   height: 40px;
