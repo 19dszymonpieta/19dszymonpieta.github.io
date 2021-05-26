@@ -99,7 +99,26 @@ section p {
   border: 4px solid #00B636;
 }
 
-.a1:hover:after {
+
+
+footer {
+  height: 40px;
+  background-color: #008736;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width:660px) {
+  nav ul li {
+    width: 100%;
+    font-size: 35px;
+  }
+}
+
+@media(min-width: 1000px) {
+  .a1:hover:after {
   content: url('img/Arkusz01.jpg');
 }
 
@@ -174,19 +193,4 @@ section p {
 .a19:hover:after {
   content: url('img/Arkusz19.jpg');
 }
-
-footer {
-  height: 40px;
-  background-color: #008736;
-  color: white;
-  line-height: 40px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-@media (max-width:660px) {
-  nav ul li {
-    width: 100%;
-    font-size: 35px;
-  }
 }
