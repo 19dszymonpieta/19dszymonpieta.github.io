@@ -117,7 +117,7 @@ footer {
   }
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 1075px) {
   .a1:hover:after {
   content: url('img/Arkusz01.jpg');
 }
