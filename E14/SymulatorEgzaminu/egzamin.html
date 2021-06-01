@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Symulator egzaminu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/main.js"></script>
+  <script src="scripts/zaladowanie.js"></script>
+  <script src="scripts/zadania.js"></script>
+</head>
+
+<body>
+  <div class="egzamin">
+    <div class="header clearfix">
+      <ul>
+        <li class="czas" id="czas">Czas: 00:00</li>
+        <li class="zdajacy" id="zdajacy">Zdający: </li>
+        <li class="zatwierdz" onclick="wynik()"><button>Zatwierdź odpowiedzi</button></li>
+      </ul>
+    </div>
+    <div class="clearfix">
+      <div class="lista">
+        <p class="a">Lista zadań</p>
+        <button id="lz1" class="lz" onclick="zadanie1()">Zadanie 1</button>
+        <button id="lz2" class="lz" onclick="zadanie2()">Zadanie 2</button>
+        <button id="lz3" class="lz" onclick="zadanie3()">Zadanie 3</button>
+        <button id="lz4" class="lz" onclick="zadanie4()">Zadanie 4</button>
+        <button id="lz5" class="lz" onclick="zadanie5()">Zadanie 5</button>
+      </div>
+      <div class="zadanie" id="zad1">
+        <p class="tresc">W kodzie deklaracji stylu języka CSS zastosowano polecenie !important, spowoduje to, że taka cecha będzie
+          h1 { color: red !important; background-color: yellow }</p>
+        <label>
+          <input type="radio" name="zadan1" value="true" id="zad1a"> miała pierwszeństwo przed innymi, nawet jeśli ma niższy priorytet
+        </label>
+        <label>
+          <input type="radio" name="zadan1" value="false" id="zad1b"> interpretowana w drugiej kolejności
+        </label>
+        <label>
+          <input type="radio" name="zadan1" value="false" id="zad1c"> miała niższy priorytet
+        </label>
+        <label>
+          <input type="radio" name="zadan1" value="false" id="zad1d"> zablokowana
+        </label>
+      </div>
+      <div class="zadanie" id="zad2">
+        <p class="tresc">Chcąc zdefiniować marginesy wewnętrzne dla danych: margines górny 50px, dolny 40px, prawy 20px i lewy 30px należy użyć składni CSS</p>
+        <label>
+          <input type="radio" name="zadan2" value="false" id="zad2a"> padding: 50px, 40px, 20px, 30px
+        </label>
+        <label>
+          <input type="radio" name="zadan2" value="true" id="zad2b"> padding: 50px, 20px, 40px, 30px
+        </label>
+        <label>
+          <input type="radio" name="zadan2" value="false" id="zad2c"> padding: 20px, 40px, 30px, 50px
+        </label>
+        <label>
+          <input type="radio" name="zadan2" value="false" id="zad2d"> padding: 40px, 30px, 50px, 20px
+        </label>
+      </div>
+      <div class="zadanie" id="zad3">
+        <p class="tresc">W załączonym fragmencie kodu CSS kolor jest zapisany w postaci
+          color: #008000;</p>
+        <label>
+          <input type="radio" name="zadan3" value="true" id="zad3a"> szesnastkowej
+        </label>
+        <label>
+          <input type="radio" name="zadan3" value="false" id="zad3b"> dziesiętnej
+        </label>
+        <label>
+          <input type="radio" name="zadan3" value="false" id="zad3c"> CMYK
+        </label>
+        <label>
+          <input type="radio" name="zadan3" value="false" id="zad3d"> HSL
+        </label>
+      </div>
+      <div class="zadanie" id="zad4">
+        <p class="tresc">Jakiego formatu należy użyć do zapisu obrazu z kompresją stratną?</p>
+        <label>
+          <input type="radio" name="zadan4" value="false" id="zad4a"> GIF
+        </label>
+        <label>
+          <input type="radio" name="zadan4" value="false" id="zad4b"> PNG
+        </label>
+        <label>
+          <input type="radio" name="zadan4" value="false" id="zad4c"> PCX
+        </label>
+        <label>
+          <input type="radio" name="zadan4" value="true" id="zad4d"> JPEG
+        </label>
+      </div>
+      <div class="zadanie" id="zad5">
+        <p class="tresc">Jednostka ppi (pixels per inch)</p>
+        <label>
+          <input type="radio" name="zadan5" value="true" id="zad5a"> określa rozdzielczość obrazów rastrowych
+        </label>
+        <label>
+          <input type="radio" name="zadan5" value="false" id="zad5b"> określa rozdzielczości obrazów generowanych przez drukarki i plotery
+        </label>
+        <label>
+          <input type="radio" name="zadan5" value="false" id="zad5c"> jest parametrem określającym rozdzielczość cyfrowych urządzeń wykonujących pomiary
+        </label>
+        <label>
+          <input type="radio" name="zadan5" value="false" id="zad5d"> jest jednostką rozdzielczości skanerów określająca częstość wykonywanych próbkowań obrazu
+        </label>
+      </div>
+    </div>
+    <footer>
+      <p>&copy;2021 Szymon Pięta, Łukasz Stopczyński, Mikołaj Toporek</p>
+    </footer>
+  </div>
+</body>
+
+</html>

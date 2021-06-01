@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Symulator egzaminu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="logowanie">
+    <h1>Logowanie</h1>
+    <input type="text" placeholder="login" id="login">
+    <input type="password" placeholder="hasło" id="haslo">
+    <button onclick="login()">Zaloguj</button>
+    <p id="blad"></p>
+    <script>
+      var pass;
+      var log;
+
+      function login() {
+        pass = haslo.value;
+        log = document.getElementById("login").value;
+        if (pass == "egzamin") {
+          if (log != "") {
+            localStorage.setItem("login", log);
+            location.href = "info.html";
+          } else {
+            blad.innerHTML = "Błędne dane";
+          }
+        } else {
+          blad.innerHTML = "Błędne dane";
+        }
+      }
+
+    </script>
+  </div>
+</body>
+
+</html>
